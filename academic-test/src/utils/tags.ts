@@ -1,7 +1,26 @@
 import { getCollection } from 'astro:content';
+import { PAGES } from '../config';
 
 async function getActiveTaggedCollections() {
-    return (await getCollection('projects')).map(e => ({ ...e, collection: 'projects' }));
+    const collections = [];
+
+    if (PAGES.publications.isActive !== false) {
+        collections.push(...(await getCollection('publications')).map(e => ({ ...e, collection: 'publications' })));
+    }
+    if (PAGES.talks.isActive !== false) {
+        collections.push(...(await getCollection('talks')).map(e => ({ ...e, collection: 'talks' })));
+    }
+    if (PAGES.projects.isActive !== false) {
+        collections.push(...(await getCollection('projects')).map(e => ({ ...e, collection: 'projects' })));
+    }
+    if (PAGES.blog.isActive !== false) {
+        collections.push(...(await getCollection('posts')).map(e => ({ ...e, collection: 'posts' })));
+    }
+    if (PAGES.teaching.isActive !== false) {
+        collections.push(...(await getCollection('teaching')).map(e => ({ ...e, collection: 'teaching' })));
+    }
+
+    return collections;
 }
 
 export async function getAllTags() {
