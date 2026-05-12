@@ -26,6 +26,11 @@ const { name, title, experience = [], education = [] } = cvEntry.data;
     </header>
 
     <div class="container-narrow">
+        <section class="section">
+            <h2 class="section-title">{name}</h2>
+            <p class="page-subtitle">{title}</p>
+        </section>
+
         {
             experience.length > 0 && (
                 <section class="section">
@@ -64,4 +69,3 @@ const { name, title, experience = [], education = [] } = cvEntry.data;
         </div>
     </div>
 </BaseLayout>
-
