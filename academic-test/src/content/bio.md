@@ -1,14 +1,16 @@
 ---
 name: "Edmund Lam"
 avatar: "images/placeholder.svg"
-shortBio: "Senior backend developer based in Montreal."
+shortBio: "Staff software developer focused on backend services, cloud architecture, and data-oriented systems."
 institution: "Montreal, Canada"
 ---
 
-I work as a senior backend developer at Poka Inc. Previously I worked as an online platform developer at Gameloft Montreal.
+I am a staff software developer at Poka Inc. in Montreal. I have 8+ years of experience working on API web services and data-oriented problems involving machine learning, data visualization, and statistical analysis.
 
-I studied Neuroscience and Computer Science at McGill University, and then completed a Masters in Neuroscience at the Universite de Montreal.
+Previously, I worked at Gameloft on backend services for mobile game platforms and at Ayuda Media Systems on software for static and digital billboard management.
+
+I studied Neuroscience and Computer Science at McGill University, completed a Master's degree in Neuroscience at the Universite de Montreal, and spent an exchange semester studying Computer Science at City University of Hong Kong.
 
 ## Current Focus
 
-Backend systems, web platforms, and practical software projects.
+Backend systems, cloud architecture, Kubernetes, API services, SQL-backed systems, debugging, and test-driven development.
