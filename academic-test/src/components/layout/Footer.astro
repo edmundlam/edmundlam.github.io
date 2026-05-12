@@ -20,16 +20,20 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
                 class="link">Academic Portfolio Astro</a
             ></span
         >
-        <a
-            href="/rss.xml"
-            aria-label="RSS Feed"
-            title="RSS Feed"
-            target="_blank"
-            rel="noreferrer"
-            class="btn-icon"
-        >
-            <Icon name="RSS" size={16} />
-        </a>
+        {
+            SETTINGS.showRSSInFooter && (
+                <a
+                    href="/rss.xml"
+                    aria-label="RSS Feed"
+                    title="RSS Feed"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="btn-icon"
+                >
+                    <Icon name="RSS" size={16} />
+                </a>
+            )
+        }
         {
             showToggle && (
                 <button

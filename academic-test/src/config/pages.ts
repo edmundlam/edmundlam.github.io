@@ -8,28 +8,28 @@ export const PAGES: PagesConfig = {
     },
     blog: {
         title: "Blog",
-        subtitle: "Thoughts on physics, philosophy, and music.",
-        isActive: true,
+        subtitle: "Notes and writing.",
+        isActive: false,
     },
     publications: {
         title: "Publications",
-        subtitle: "A collection of research papers and scientific articles.",
-        isActive: true,
+        subtitle: "Research papers and articles.",
+        isActive: false,
     },
     talks: {
         title: "Talks & Presentations",
-        subtitle: "Public lectures, colloquia, and conference presentations.",
-        isActive: true,
+        subtitle: "Presentations and talks.",
+        isActive: false,
     },
     projects: {
         title: "Code & Projects",
-        subtitle: "Open source contributions and technological experiments.",
+        subtitle: "Selected projects and experiments.",
         isActive: true,
     },
     teaching: {
         title: "Teaching",
-        subtitle: "Academic courses and educational materials.",
-        isActive: true,
+        subtitle: "Courses and educational materials.",
+        isActive: false,
     },
     tags: {
         title: "Tags",
@@ -38,7 +38,7 @@ export const PAGES: PagesConfig = {
     },
     cv: {
         title: "Curriculum Vitae",
-        subtitle: "Academic and professional history.",
-        isActive: true,
+        subtitle: "Professional history.",
+        isActive: false,
     },
 };

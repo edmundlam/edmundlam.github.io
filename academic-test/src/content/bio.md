@@ -1,28 +1,14 @@
 ---
-name: "Claude Shannon"
-avatar: "shannon.jpg"
-shortBio: "Mathematician and electrical engineer known as the 'Father of Information Theory'. Pioneer in digital computing and cryptography."
-institution: "MIT, Cambridge MA"
+name: "Edmund Lam"
+avatar: "images/placeholder.svg"
+shortBio: "Senior backend developer based in Montreal."
+institution: "Montreal, Canada"
 ---
 
-I am a mathematician and electrical engineer best known for founding **Information Theory**. My work in the late 1940s established the theoretical foundations of modern digital communications and computing.
+I work as a senior backend developer at Poka Inc. Previously I worked as an online platform developer at Gameloft Montreal.
 
-## My Life
+I studied Neuroscience and Computer Science at McGill University, and then completed a Masters in Neuroscience at the Universite de Montreal.
 
-Born in Petoskey, Michigan on April 30, 1916, I showed an early aptitude for engineering and mathematics. After studying at the University of Michigan, I completed my PhD at MIT where I famously applied Boolean algebra to electrical circuits. My master's thesis on relay switching circuits is considered one of the most important master's theses ever written.
+## Current Focus
 
-During World War, I worked at Bell Labs on fire control systems and cryptography, which led to my seminal work in information theory.
-
-## Current Work
-
-I continue to work on various problems at the intersection of mathematics, engineering, and computer science. My interests include artificial intelligence, pattern recognition, game theory, and the fundamental limits of computation.
-
-I also enjoy juggling, unicycling, and playing the clarinet - I even built a juggling machine!
-
-## Research Interests
-
-My research focus includes: **Information Theory**, **Cryptography**, **Digital Computing**, **Artificial Intelligence**, **Game Theory**, and **Switching Circuits**.
-
----
-
-*"I am a mathematician. I am interested in the fundamental limits on the rate at which information can be transmitted."*
+Backend systems, web platforms, and practical software projects.
