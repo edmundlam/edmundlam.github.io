@@ -8,6 +8,12 @@ export const SOCIALS: SocialLink[] = [
         isActive: true,
     },
     {
+        name: "Bluesky",
+        href: "https://bsky.app/profile/edmundlam.bsky.social",
+        linkTitle: `Follow Edmund Lam on Bluesky`,
+        isActive: true,
+    },
+    {
         name: "Mail",
         href: "",
         linkTitle: `Send an email to Edmund Lam`,
@@ -37,6 +43,7 @@ export const SOCIAL_ICONS: Record<string, string> = {
     Github: "Github",
     Mail: "Mail",
     Linkedin: "LinkedIn",
+    Bluesky: "Bluesky",
     "Google Scholar": "GoogleScholar",
     ORCID: "ORCID",
     RSS: "RSS",
