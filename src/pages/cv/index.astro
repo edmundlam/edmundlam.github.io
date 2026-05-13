@@ -31,6 +31,10 @@ const { name, title, experience = [], education = [] } = cvEntry.data;
             <p class="page-subtitle">{title}</p>
         </section>
 
+        <div class="prose max-w-none">
+            <Content />
+        </div>
+
         {
             experience.length > 0 && (
                 <section class="section">
@@ -63,9 +67,5 @@ const { name, title, experience = [], education = [] } = cvEntry.data;
                 </section>
             )
         }
-
-        <div class="prose max-w-none">
-            <Content />
-        </div>
     </div>
 </BaseLayout>
