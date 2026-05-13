@@ -1,6 +1,6 @@
 ---
 name: "Edmund Lam"
-avatar: "images/placeholder.svg"
+avatar: "images/edmund_lam.webp"
 shortBio: "Staff software developer focused on backend services, cloud architecture, and data-oriented systems."
 institution: "Montreal, Canada"
 ---
