@@ -5,7 +5,7 @@ export const SITE: SiteConfig = {
     author: "Edmund Lam",
     desc: "Personal portfolio of Edmund Lam, a staff software developer in Montreal focused on backend services, AI-powered features, and cloud architecture.",
     title: "Edmund Lam",
-    ogImage: "images/placeholder.svg",
+    ogImage: "images/edmund_lam.webp",
     postPerPage: 5,
     favicon: "/favicon.svg",
     lang: "en",

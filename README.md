@@ -1,45 +1,27 @@
-# 🎓 Academic Portfolio Astro
+# Professional Portfolio
 
 [![Astro](https://img.shields.io/badge/ASTRO-FF5D01?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
 [![Tailwind](https://img.shields.io/badge/TAILWIND-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/MIT-44CC11?style=for-the-badge)](https://opensource.org/license/mit)
 
-![Page Screenshot](public/main_page.jpg)
-
-A fast, minimalist, and highly customizable Astro template designed specifically for researchers, professors, PhD students, and academics. 
+A fast, minimalist portfolio site built with Astro. Originally based on the [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro) template, customized for a professional software developer portfolio. 
 
 Strongly inspired by [Academic Pages](https://github.com/academicpages/academicpages.github.io) and [AstroPaper](https://github.com/satnaing/astro-paper), this template prioritizes content readability, SEO discoverability, and ease of configuration without touching the UI code.
 
-> 🌟 **[View the Live Demo](https://astro-academics-page.vercel.app/)**
-
 ## ✨ Features
 
-- **Markdown-Driven Collections:** Easily manage your `Bio`, `Blog`, `Publications`, `Projects`, `Talks`, `CV`, and `Teaching` experience purely through `.md` files, **no programming knowledge required**.
-- **Academic Standard Support:** Out-of-the-box $\LaTeX$ rendering support via `remark-math`/`rehype-katex`.
-- **Extensive Theming System:** Built-in Light/Dark mode toggle with a highly customizable underlying design system and several preset color palettes.
-- **Toggleable Sections:** Don't need a "Talks" or "Teaching" section? Disable them globally with a single boolean flag in your config.
-- **Peak Performance:** Built with Astro and Tailwind CSS v4 (via `@tailwindcss/vite`), yielding near-perfect Lighthouse scores and minimal client-side JavaScript.
-- **Analytics:** Includes native configuration options for self-hosted Umami analytics (`umami.websiteId`), as well as GA4 support (`ga4Id`).
-- **Two-Column Architecture:** Optimized layout with a sticky left profile sidebar and a scrollable main content area.
+- **Markdown-Driven Content:** Manage bio, CV, projects, and writing through `.md` files
+- **LaTeX Support:** Math rendering via `remark-math`/`rehype-katex` for technical writing
+- **Light/Dark Mode:** Toggleable theme with customizable color palettes
+- **Toggleable Sections:** Enable/disable sections (blog, publications, talks, teaching) via config
+- **Fast Performance:** Built with Astro for minimal JavaScript and fast load times
+- **Analytics Ready:** Configuration options for Umami and GA4
+- **Two-Column Layout:** Sticky left sidebar with scrollable main content area
 
 ## 🚀 Getting Started
 
-### 1. Bootstrap the Repository
-
-**Via GitHub CLI (Recommended):**
-```bash
-gh repo create my-portfolio --template="rubzip/academic-portfolio-astro" --clone
-cd my-portfolio
-```
-
-**Via Standard Git:**
-```bash
-git clone https://github.com/rubzip/academic-portfolio-astro.git my-portfolio
-cd my-portfolio
-```
-
-### 2. Install Dependencies
+### Install Dependencies
 This project uses Node.js (requires **Node.js >= 22.12.0**).
 ```bash
 npm install
@@ -70,11 +52,11 @@ This project follows a centralized configuration architecture and is driven enti
 │   ├── content/            # 📝 ALL MARKDOWN CONTENT LIVES HERE
 │   │   ├── bio.md
 │   │   ├── cv.md
-│   │   ├── posts/
-│   │   ├── projects/
-│   │   ├── publications/
-│   │   ├── talks/
-│   │   └── teaching/
+│   │   ├── posts/          # Blog posts (optional)
+│   │   ├── projects/       # Featured projects
+│   │   ├── publications/   # Research papers (optional)
+│   │   ├── talks/          # Presentations (optional)
+│   │   └── teaching/       # Courses (optional)
 │   ├── layouts/            # Page layout wrappers
 │   ├── pages/              # Astro routing
 │   ├── styles/             # Global CSS (`global.css` - Theme colors, base styles)
@@ -82,11 +64,9 @@ This project follows a centralized configuration architecture and is driven enti
 └── content.config.ts       # Zod schemas for all markdown collections
 ```
 
-## 📖 Documentation & Setup
+## 📖 Configuration
 
-For a comprehensive, step-by-step guide on how to configure your site, modify the design, and write new content, please refer to the dedicated setup post included in this template:
-
-**👉 [Setting up Your Academic Portfolio](src/content/posts/setting-up-portfolio.md)**
+All configuration is managed centrally in the `src/config` directory. Modify these files to personalize your portfolio:
 
 ## 📋 Configuration
 
@@ -111,8 +91,6 @@ All standard build commands run through `npm`:
 | `npm run preview` | Previews your production build locally |
 | `npm run format` | Runs Prettier on all files to format code |
 
-## 🤝 Contributing & License
-
-Contributions, issues, and feature requests are always welcome! Feel free to check the [issues page](https://github.com/rubzip/academic-portfolio-astro/issues).
+## 📄 License
 
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.
