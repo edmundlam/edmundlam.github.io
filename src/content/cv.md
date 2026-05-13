@@ -5,7 +5,7 @@ experience:
   - role: "Back-End Developer IV (Staff)"
     institution: "Poka Inc."
     period: "July 2023 - Present"
-    description: "Staff-level backend development role in Montreal, Quebec."
+    description: "Staff-level backend development role in Montreal, Quebec. Currently on the AI enablement team, building AI-powered features into Poka's product and exploring agentic coding, context engineering, and developer tooling."
   - role: "Back-End Developer III (Senior)"
     institution: "Poka Inc."
     period: "September 2021 - June 2023"
@@ -51,13 +51,11 @@ education:
 
 ## Summary
 
-Practical knowledge in computer science and software development. 8+ years of experience working on API web services and solving data-oriented problems involving machine learning, data visualization, and statistical analysis.
+Practical knowledge in computer science and software development. 8+ years of experience working on API web services and data-oriented systems.
 
 Core competencies include Python, Git, SQL, cloud architecture, Kubernetes, data structures and algorithms, debugging, and test-driven development.
 
-## Certifications
-
-- AWS Certified.
+Currently focused on AI enablement—building AI-powered product features, exploring agentic coding workflows, context engineering for LLM applications, and improving developer tooling.
 
 ## Publications
 

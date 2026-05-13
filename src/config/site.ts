@@ -3,7 +3,7 @@ import type { SiteConfig, ThemeConfig, SettingsConfig, UmamiAnalyticsConfig, Ana
 export const SITE: SiteConfig = {
     website: "https://edmundlam.github.io/",
     author: "Edmund Lam",
-    desc: "Personal portfolio of Edmund Lam, a staff software developer in Montreal focused on backend services, cloud architecture, and data-oriented systems.",
+    desc: "Personal portfolio of Edmund Lam, a staff software developer in Montreal focused on backend services, AI-powered features, and cloud architecture.",
     title: "Edmund Lam",
     ogImage: "images/placeholder.svg",
     postPerPage: 5,
