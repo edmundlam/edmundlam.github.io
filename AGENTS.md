@@ -1,9 +1,10 @@
 # AGENTS.md
 
 ## Commands
-- `npm run dev` - Start dev server
-- `npm run build` - Production build
-- `npm run preview` - Preview build
+- `npm run dev` - Start dev server (localhost:4321)
+- `npm run build` - Production build (outputs to `./dist/`)
+- `npm run preview` - Preview production build locally
+- `npm run astro` - Direct Astro CLI access
 
 ## Requirements
 - Node.js >= 22.12.0
@@ -11,19 +12,38 @@
 ## Architecture
 - **Barrel files:** `src/config/index.ts`, `src/types/index.ts`
 - **Content:** `src/content/` - Add `.md` files to subdirectories (posts/, publications/, projects/, talks/, teaching/)
-- **Config:** `src/config/` - site.ts (SITE, THEME_CONFIG, SETTINGS, ANALYTICS), pages.ts (PAGES), navigation.ts (NAV_LINKS), social.ts (SOCIALS), themes.ts
-- **Types:** `src/types/` - content.ts (Bio, CVItem, etc.), display.ts (ListingItem, DetailItem), config.ts, themes.ts
-- **Styles:** `src/styles/global.css` - Theme colors, base styles
+  - `bio.md` - Profile info (name, avatar, shortBio, institution)
+  - `cv.md` - CV entries (experience, education arrays)
+- **Config:** `src/config/` - Centralized configuration
+  - `site.ts` - SITE (metadata), THEME_CONFIG (themes), SETTINGS (UI toggles), ANALYTICS (GA4/Umami)
+  - `pages.ts` - PAGES (enable/disable sections, subtitles)
+  - `navigation.ts` - NAV_LINKS (navbar)
+  - `social.ts` - SOCIALS (footer/header links)
+  - `themes.ts` - Color palette definitions
+- **Types:** `src/types/` - TypeScript interfaces (content.ts, display.ts, config.ts, themes.ts)
+- **Styles:** `src/styles/global.css` - All CSS classes (see DESIGN-GUIDE.md for class system)
 - **Assets:** `src/assets/icons.ts` - Icon definitions
 
+## Content Schema
+- Collections defined in `src/content.config.ts` with Zod validation
+- Supported collections: `bio`, `cv`, `posts`, `projects`, `publications`, `talks`, `teaching`
+- Each collection has specific frontmatter fields (title, date, tags, external_url, etc.)
+- `example_contents/` directory has template `.md` files for each collection type
+
 ## Key Constraints
-- **No `<style>` in `.astro` files** - Use global.css and Tailwind classes in components
-- **Two-column layout:** Left sidebar (sticky profile), Right main (scrollable content)
+- **No `<style>` in `.astro` files** - Use global.css and Tailwind classes only
+- **Two-column layout:** Left sidebar (sticky profile, 280px), Right main (scrollable content, max-width 800px)
 - **Markdown-driven:** All content in `.md` files with YAML frontmatter
-- **Theme config:** Use `THEME_CONFIG` for theme settings (lightAndDark, themeLight, themeDark)
+- **Flat design:** No drop shadows, no glassmorphism, minimal border-radius (0.25rem)
+- **Typography:** Inter for body/headings, JetBrains Mono for code/tags
+- **One accent color per theme** - Use only for hover states and active links
+
+## Deployment
+- Push to `staging` branch triggers GitHub Pages deployment via `.github/workflows/deploy.yml`
 
 ## Notes
 - Tailwind CSS v4 uses `@tailwindcss/vite` plugin (no tailwind.config.js)
-- LaTeX math rendering via remark-math/rehype-katex
-- Analytics supported via GA4 (`ga4Id`) and Umami (`umami.websiteId`) — configure in `src/config/site.ts`
+- LaTeX math rendering via `remark-math`/`rehype-katex`
+- Analytics via GA4 (`ANALYTICS.ga4Id`) and Umami (`ANALYTICS.umami.websiteId`)
 - No lint/typecheck scripts configured
+- See DESIGN-GUIDE.md for complete CSS class system and design principles
