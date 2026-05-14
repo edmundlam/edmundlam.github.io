@@ -3,6 +3,8 @@ import type { PagesConfig } from "../types";
 export const PAGES: PagesConfig = {
     home: {
         title: "About Me",
+        navTitle: "About",
+        href: "/",
         subtitle: "",
         isActive: true,
     },
@@ -18,11 +20,15 @@ export const PAGES: PagesConfig = {
     },
     talks: {
         title: "Talks & Presentations",
+        navTitle: "Talks",
+        href: "/talks",
         subtitle: "Presentations and talks.",
-        isActive: false,
+        isActive: true,
     },
     projects: {
         title: "Code & Projects",
+        navTitle: "Projects",
+        href: "/projects",
         subtitle: "Selected projects and experiments.",
         isActive: true,
     },
@@ -33,11 +39,14 @@ export const PAGES: PagesConfig = {
     },
     tags: {
         title: "Tags",
+        href: "/tags",
         subtitle: "Explore content by topic.",
         isActive: true,
     },
     cv: {
         title: "Curriculum Vitae",
+        navTitle: "CV",
+        href: "/cv",
         subtitle: "Professional history.",
         isActive: true,
     },

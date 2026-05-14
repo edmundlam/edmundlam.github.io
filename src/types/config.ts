@@ -31,12 +31,6 @@ export interface AnalyticsConfig {
     umami?: UmamiAnalyticsConfig;
 }
 
-export interface NavLink {
-    href: string;
-    label: string;
-    isActive: boolean;
-}
-
 export interface SocialLink {
     name: string;
     href: string;
@@ -46,6 +40,8 @@ export interface SocialLink {
 
 export interface PageConfig {
     title: string;
+    navTitle?: string;
+    href?: string;
     subtitle: string;
     isActive: boolean;
 }

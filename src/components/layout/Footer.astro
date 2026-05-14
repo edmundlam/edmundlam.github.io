@@ -12,14 +12,6 @@ const showDevTools = import.meta.env.DEV || SETTINGS.addDevToolsInProduction;
         <span class="body-xs">&copy; {currentYear} {SITE.author}.</span>
     </div>
     <div class="flex items-center gap-4">
-        <span class="body-xs hidden sm:inline-block"
-            >Built with <a
-                href="https://github.com/rubzip/academic-portfolio-astro/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link">Academic Portfolio Astro</a
-            ></span
-        >
         {
             SETTINGS.showRSSInFooter && (
                 <a

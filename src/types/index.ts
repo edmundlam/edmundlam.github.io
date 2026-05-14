@@ -21,6 +21,5 @@ export type {
     UmamiAnalyticsConfig,
     AnalyticsConfig,
     PagesConfig,
-    NavLink,
     SocialLink,
 } from "./config";
