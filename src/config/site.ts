@@ -24,8 +24,8 @@ export const SETTINGS: SettingsConfig = {
 };
 
 const umami: UmamiAnalyticsConfig = {
-    websiteId: "", // e.g., 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-    src: "https://cloud.umami.is/script.js", // Default Umami cloud script URL
+    websiteId: "a1be0c78-139e-413a-bb3c-e28b3b9dbe5c",
+    src: "https://umami-taupe-gamma.vercel.app/script.js",
 }
 
 export const ANALYTICS: AnalyticsConfig = {
