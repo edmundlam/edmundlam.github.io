@@ -38,6 +38,25 @@
 - **Typography:** Inter for body/headings, JetBrains Mono for code/tags
 - **One accent color per theme** - Use only for hover states and active links
 
+## Image Assets
+- **Location:** `src/assets/` for component imports, `public/images/` for content images
+- **Preferred format:** WebP for photos/screenshots (much smaller than JPEG/PNG)
+- **Converting to WebP:** Use `cwebp` (installed: v1.6.0)
+  ```bash
+  # Single file
+  cwebp input.jpg -o output.webp
+
+  # With quality (default 75)
+  cwebp input.jpg -q 80 -o output.webp
+
+  # Batch convert
+  for img in *.{jpg,jpeg,png}; do
+    [ -f "$img" ] && cwebp "$img" -o "${img%.*}.webp"
+  done
+  ```
+- **Content images** (for blog posts): Place in `public/images/`, reference as `/images/filename.webp`
+- **Component assets:** Place in `src/assets/`, import directly in `.astro` files
+
 ## Deployment
 - Push to `staging` branch triggers GitHub Pages deployment via `.github/workflows/deploy.yml`
 

@@ -7,8 +7,8 @@ tags:
   - "Programmimg"
 ---
 
-My daughter has started to get interested in typing, and all the free typing games we found on the
-web have the following issues:
+My 8 year old daughter has started to get interested in typing, and all the free typing games we found on the
+web have the following issues. Either:
 
 1. They are not fun enough, e.g. targeted towards adults leaning how to type (
    e.g. [keybr](https://www.keybr.com/), [monkeytype](https://monkeytype.com/))
@@ -26,11 +26,11 @@ Pretty nice spec! So it looks like she wants a game where you pick flowers, and 
 the next level. Each level has more and more keys, and for some reason she doesn't want to learn all the keys (thats
 ok).
 
-## Human Refinement
+## Refinement
 
 My next step was to refine the spec. There were a few details that she had not thought about that we could go over
 together. We first took a photo of the page and gave it to Claude to transcribe, and then
-we had a working spec that we could edit:
+we had a working document that we could edit:
 
 ```markdown
 Learn to type flower game. You have to pick flowers by typing the right keys.
@@ -56,8 +56,7 @@ When you complete all the levels, you get a diploma that you can print.
 Each level needs three stars. Each level is five minutes.
 ```
 
-For the first refinement, I decided to not go with AI. Here are some questions that I asked, and the eventual changes to
-the first spec.
+Here are some questions that I asked, and the eventual changes to the first spec.
 
 > "How many flowers do you need to pick to get three stars?"
 
@@ -77,8 +76,8 @@ You can only go to the next level if you get 3 stars in the current level.
 > "In the first 5 levels, we know what keys you want to work, but is it just one letter per flower?"
 
 ```markdown
-At level 1, it is just 1 letter that you have to type, but as you go up the levels, you have to type more letters at the
-same time.
+At level 1, it is just 1 letter that you have to type, but as you go up the levels, 
+you have to type more letters at the same time.
 
 Level 2, its either one or two letters
 
@@ -151,10 +150,10 @@ When you complete all the levels, you get a diploma that you can print. The dipl
 
 ```
 
-## AI Powered Refinement
+## AI Assisted Refinement
 
-With the spec in hand, I wanted to make sure we had thought through all the details before building anything. I turned
-to Claude to help us think through the edge cases and implementation details.
+Ok we had a decent spec, but as almost always do now in my own workflow, I get an AI to help me further plan out the
+design. We opend up Claude Code together to help us think through the edge cases and implementation details.
 
 My prompt was simple:
 
@@ -162,7 +161,7 @@ My prompt was simple:
 > other things that we might need to know before creating the HTML game. Then we will write those details in a second
 > markdown file."
 
-Claude used an interactive question tool to ask us clarifying questions in rounds, covering core mechanics, visuals and
+Claude used its `AskUserQuestion` tool to ask us clarifying questions in rounds, covering core mechanics, visuals and
 themes. Some details that we got out of this:
 
 1. Do multiple flowers appear on the screen? How the targeting of flowers work?
@@ -180,36 +179,35 @@ interested in the details.
 
 ## AI Powered Implementation
 
-With the design document complete, the next step was to actually build the game. Claude Code running with GLM4.7 did a 
-decent one-shot, with the result being a single `index.html` file that I could host statically on Github Pages.
+With the design document complete, the next step was to actually build the game. Claude Code running on GLM4.7 did a
+decent one-shot, with the result being a [single static html file](https://edmundlam.github.io/lab/kids/typing/flower-game/) 
+that I could host on Github Pages.
 
+![Flower game main menu](/images/flower-game-main-menu.webp)
 
+![Flower game action](/images/flower-game-action.webp)
 
 There were bugs, of course. The first version didn't handle the level unlocking correctly. The timer didn't stop when
 you completed a level. Later, we added a "10-second bonus time" feature once you reached 3 stars, something that
 wasn't in the original spec but made the game more fun.
 
 We iterated together, testing the game with my daughter and making adjustments. She'd point out what didn't feel right,
-and I'd work with Claude to fix it. She was very excited to show it to the rest of the family. 
+and I'd work with Claude to fix it. She was very excited to show it to the rest of the family.
 
-You can go try out the game [here](https://edmundlam.github.io/lab/kids/typing/flower-game/).
-
-## Final result:
+## Conclusion:
 
 When my kids ask me what I do for work, I always find it difficult to explain. "I work with computers", or "I try to get
-computers to do
-what I want them to do and figure out why it is not doing what I do" are my common answers. As you can see I am not very
-good at explaining it. But hopefully here with this activity, I showed her a little bit of what I regularly do at work.
+computers to do what I want them to do and figure out why it is not doing what I do" are my common answers. 
+As you can see I am not very good at explaining it. But hopefully here with this activity, 
+I showed her a little bit of what I regularly do at work.
 
-As my kids have grown up I've always pondered how I would introduce my kids to coding. What I had not considered was
-that
+I often wondered how I could introduce my kids to coding. What I had not considered was
 that the first part of software development I would show her would not be the code, but the other parts of the craft:
 writing a spec, refining the requirements and thinking through the edge case even before a single like of code is
 written.
 
 I'll be honest, I didn't even attempt to explain to her how the code works. But eventually she may get curious and start
-to
-ask, "How does it work"? And then we can start peeking on the other side.
+to ask, "How does it work"? And then we can start peeking on the other side.
 
 In the meantime, we'll have fun creating games together.
 
