@@ -11,7 +11,8 @@ export const PAGES: PagesConfig = {
     blog: {
         title: "Blog",
         subtitle: "Notes and writing.",
-        isActive: false,
+        isActive: true,
+        href: "posts",
     },
     publications: {
         title: "Publications",
