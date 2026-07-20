@@ -211,7 +211,7 @@ to ask, "How does it work"? And then we can start peeking on the other side.
 
 In the meantime, we'll have fun creating games together.
 
-
+![Flower game diploma](/images/flower-game-diploma.webp)
 
 
 
