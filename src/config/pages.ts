@@ -12,7 +12,7 @@ export const PAGES: PagesConfig = {
         title: "Blog",
         subtitle: "Notes and writing.",
         isActive: true,
-        href: "posts",
+        href: "/posts",
     },
     publications: {
         title: "Publications",
