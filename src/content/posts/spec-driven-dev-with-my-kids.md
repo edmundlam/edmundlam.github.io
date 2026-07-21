@@ -82,12 +82,12 @@ When you complete all the levels, you get a diploma that you can print. The dipl
 
 ```
 
-## AI Assisted Refinement
+## AI Assisted Planning
 
 Ok with a decent spec in hand, I did what I now regularly do in my real workflows: I get an AI to help me further plan out the
 design. We opened up Claude Code together to help us think through the edge cases and implementation details.
 
-My prompt was simple:
+My starting prompt:
 
 > "My kid has an idea for a typing game, we put the info here: typing/flower-game/spec.md. Interview us to clarify any
 > other things that we might need to know before creating the HTML game. Then we will write those details in a second
