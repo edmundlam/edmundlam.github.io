@@ -707,6 +707,30 @@ a:hover,
     margin: 2rem 0;
 }
 
+/* Tables */
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border: 1px solid var(--border);
+}
+
+.prose th {
+    font-weight: 700;
+    background: var(--surface);
+}
+
+.prose tr:nth-child(even) {
+    background: var(--surface);
+}
+
 
 /* ===========================================
    SHARED COMPONENTS
