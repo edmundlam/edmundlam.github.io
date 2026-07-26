@@ -65,4 +65,5 @@
 - LaTeX math rendering via `remark-math`/`rehype-katex`
 - Analytics via GA4 (`ANALYTICS.ga4Id`) and Umami (`ANALYTICS.umami.websiteId`)
 - No lint/typecheck scripts configured
+- TDD is not necessary for this repo.
 - See DESIGN-GUIDE.md for complete CSS class system and design principles

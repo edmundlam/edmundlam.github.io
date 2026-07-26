@@ -126,7 +126,7 @@ const jsonLd = {
         <ClientRouter />
 
         {
-            (ANALYTICS.umami.websiteId || ANALYTICS.ga4Id) && (
+            import.meta.env.PROD && (ANALYTICS.umami.websiteId || ANALYTICS.ga4Id) && (
                 <script is:inline define:vars={{
                     umamiId: ANALYTICS.umami.websiteId,
                     umamiSrc: ANALYTICS.umami.src,
