@@ -1,7 +1,7 @@
 ---
-title: "Finish the Cube: Your First PLL"
+title: "Finish the Cube: Your First 2-Look PLL"
 date: "2026-10-10"
-description: "Finish the cube with just 4 algorithms (T, Ua, H, Z) — with a glossary and move-notation primer for first-timers."
+description: "Finish the cube using 2-Look PLL with just 4 algorithms."
 author: "Edmund Lam"
 tags:
   - "Cubing"
@@ -48,18 +48,18 @@ Teaching this to someone? Read the [teacher's notes](/posts/teaching-a-4-alg-2-l
 <div class="card row"><div class="fig" data-c="0123"></div>
 <div><b>Corners already right?</b><p class="mut" style="margin:4px 0 0">Turn the top layer. If all four corners match the center colors on their sides, skip to Step 2.</p></div></div>
 <div class="card row"><div class="fig" data-c="1023" data-l="1" data-a="TR-BR*"></div>
-<div><b>Headlights?</b><p class="mut" style="margin:4px 0 0">Turn the top so the headlights face <b>left</b>. Do the <b>T</b> alg once.</p></div></div>
+<div><b>Headlights?</b><p class="mut" style="margin:4px 0 0">Turn the top so the headlights face <b>left</b>. Do the <b>T</b> alg once.</p><code class="alg">R U R' U' R' F R2 U' R' U' R U R' F'</code></div></div>
 <div class="card row"><div class="fig" data-c="2103" data-a="TR-BL*"></div>
-<div><b>No headlights?</b><p class="mut" style="margin:4px 0 0">Do the <b>T</b> alg once from any angle. You'll get headlights. Then do the headlights step above.</p></div></div>
+<div><b>No headlights?</b><p class="mut" style="margin:4px 0 0">Do the <b>T</b> alg once from any angle. You'll get headlights. Then do the headlights step above.</p><code class="alg">R U R' U' R' F R2 U' R' U' R U R' F'</code></div></div>
 <p>After that, turn the top layer until all four corners match their centers. You'll never need more than 2 T algs.</p>
 
 <h2>Step 2: Fix the edges</h2>
 <p>Turn the top layer so the corners match their centers. Now look at the edges (the middle pieces on each side). Which picture matches?</p>
 <div class="grid">
 <div class="cell"><div class="fig" data-c="0123" data-e="0123"></div><b>All match</b><span>Turn the top to line up. Done!</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="0231" data-a="B-L,L-R,R-B"></div><b>One matches</b><span>Hold it at the back. Do <code>Ua</code>. Not solved? Do <code>Ua</code> again.</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="2301" data-a="T-B*,L-R*"></div><b>H</b><span>Each edge shows the color of the face on the opposite side. Do <code>H</code>.</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="1032" data-a="B-L*,T-R*"></div><b>Z</b><span>Each edge shows the color of a neighboring face. Do <code>Z</code>. If it's mirrored, turn the whole cube 90° first.</span></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="0231" data-a="B-L,L-R,R-B"></div><b>One matches</b><span>Hold it at the back. Do <code>Ua</code>. Not solved? Do <code>Ua</code> again.</span><code class="alg">R2 U R U R' U' R' U' R' U R'</code></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="2301" data-a="T-B*,L-R*"></div><b>H</b><span>Each edge shows the color of the face on the opposite side. Do <code>H</code>.</span><code class="alg">M2 U M2 U2 M2 U M2</code></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="1032" data-a="B-L*,T-R*"></div><b>Z</b><span>Each edge shows the color of a neighboring face. Do <code>Z</code>. If it's mirrored, turn the whole cube 90° first.</span><code class="alg">M2 U M2 U M' U2 M2 U2 M'</code></div>
 </div>
 
 <h2>Step 3: Line it up</h2>

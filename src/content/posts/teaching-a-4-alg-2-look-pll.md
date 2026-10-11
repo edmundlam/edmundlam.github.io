@@ -1,7 +1,7 @@
 ---
-title: "Teaching a 4-Alg 2-Look PLL"
+title: "Teaching 2-Look PLL with just 4 algorithms"
 date: "2026-10-10"
-description: "The smallest algorithm set that finishes the cube (T, Ua, H, Z), plus a teaching sequence and common mistakes to watch for."
+description: "For teaching someone who has F2L and 2-look OLL, but no PLL algs yet. The aim is the smallest alg set that finishes the cube, trading move count for less to memorize."
 author: "Edmund Lam"
 tags:
   - "Cubing"
@@ -35,18 +35,18 @@ Learning it yourself? Read the [learner version](/posts/finish-the-cube-your-fir
 <div class="card row"><div class="fig" data-c="0123"></div>
 <div><b>Solved</b><p class="mut" style="margin:4px 0 0">Go to Step 2.</p></div></div>
 <div class="card row"><div class="fig" data-c="1023" data-l="1" data-a="TR-BR*"></div>
-<div><b>Headlights</b><p class="mut" style="margin:4px 0 0">Put them on the left, do T. One T solves every headlights case, whether it looks like an adjacent swap or a 3-cycle.</p></div></div>
+<div><b>Headlights</b><p class="mut" style="margin:4px 0 0">Put them on the left, do T. One T solves every headlights case, whether it looks like an adjacent swap or a 3-cycle.</p><code class="alg">R U R' U' R' F R2 U' R' U' R U R' F'</code></div></div>
 <div class="card row"><div class="fig" data-c="2103" data-a="TR-BL*"></div>
-<div><b>No headlights</b><p class="mut" style="margin:4px 0 0">Do T from any angle. Headlights will now exist, then follow the headlights rule. Covers diagonal swaps and the E case.</p></div></div>
+<div><b>No headlights</b><p class="mut" style="margin:4px 0 0">Do T from any angle. Headlights will now exist, then follow the headlights rule. Covers diagonal swaps and the E case.</p><code class="alg">R U R' U' R' F R2 U' R' U' R U R' F'</code></div></div>
 <p class="mut">Worst case is 2 T-perms.</p>
 
 <h2>Step 2: Edges</h2>
 <p>Turn U so the corners match their centers, then read the edges:</p>
 <div class="grid">
 <div class="cell"><div class="fig" data-c="0123" data-e="0123"></div><b>Solved</b><span>AUF and done</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="0231" data-a="B-L,L-R,R-B"></div><b>One correct</b><span>Put it at the back. <code>Ua</code>, and if it didn't solve, <code>Ua</code> again</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="2301" data-a="T-B*,L-R*"></div><b>H</b><span>Each edge shows the opposite face's color</span></div>
-<div class="cell"><div class="fig" data-c="0123" data-e="1032" data-a="B-L*,T-R*"></div><b>Z</b><span>Each edge shows a neighbor's color. This alg swaps front/left and back/right. If yours are front/right and back/left, rotate the whole cube 90° first.</span></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="0231" data-a="B-L,L-R,R-B"></div><b>One correct</b><span>Put it at the back. <code>Ua</code>, and if it didn't solve, <code>Ua</code> again</span><code class="alg">R2 U R U R' U' R' U' R' U R'</code></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="2301" data-a="T-B*,L-R*"></div><b>H</b><span>Each edge shows the opposite face's color</span><code class="alg">M2 U M2 U2 M2 U M2</code></div>
+<div class="cell"><div class="fig" data-c="0123" data-e="1032" data-a="B-L*,T-R*"></div><b>Z</b><span>Each edge shows a neighbor's color. This alg swaps front/left and back/right. If yours are front/right and back/left, rotate the whole cube 90° first.</span><code class="alg">M2 U M2 U M' U2 M2 U2 M'</code></div>
 </div>
 
 <h2>Why it works</h2>
