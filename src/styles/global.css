@@ -992,6 +992,8 @@ a:hover,
     --yd: #e0ac00; /* yellow corners */
     --mut: var(--text-muted);
     --acc: var(--foreground);
+    --line: var(--border); /* eagle-cross diagram strokes */
+    --fg: var(--foreground); /* eagle-cross diagram labels */
 }
 
 .cube-post .mut {
@@ -1084,4 +1086,58 @@ a:hover,
     height: 10px;
     border-radius: 0.25rem;
     margin: 0 3px 0 8px;
+}
+
+/* Eagle-cross post: 3-col diagram strip, move chips,
+   numbered step headings, callout accent */
+
+.cube-post .g3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.cube-post .g3 svg {
+    max-width: 115px;
+}
+
+.cube-post .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.cube-post .chip {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 0.8125rem;
+    text-align: center;
+}
+
+.cube-post .chip code {
+    display: block;
+    font-size: 1rem;
+    background: none;
+    padding: 0;
+}
+
+.cube-post .n {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--foreground);
+    color: var(--background);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.cube-post .call {
+    border-left: 4px solid #f08a24;
 }

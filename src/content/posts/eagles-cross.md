@@ -10,161 +10,134 @@ tags:
   - "Teaching"
 ---
 
-The white cross is the first step of solving a Rubik's Cube in the beginner's method. 
+The white cross is the first step of solving a Rubik's Cube in the beginner's method.
+This step should be done intuitively, there are no specific algorithms to remember.
 But the standard teaching language - "edges," "centers," "orienting pieces" - can feel like vocabulary lessons rather than a puzzle.
 
 Here's an alternative approach that I used to teach my kids using a story metaphor: bald eagles, colored trees, and a white rabbit. This reframes
 technical concepts into visualizable actions that make sense to beginners of any age.
 
-## The Scene
+<div class="cube-post">
 
-The metaphor sets up the cube as a landscape:
+<p class="mut">Every diagram is tagged with its viewpoint. In top views, the front of the cube is at the bottom of the picture.</p>
 
-| Cube piece                   | Metaphor                                                          |
-|------------------------------|-------------------------------------------------------------------|
-| Bottom layer                 | The ground, with a white center                                   |
-| Bottom center piece          | The white rabbit (the prey), sitting in the middle                |
-| Each side center piece       | A colored tree                                                    |
-| Middle layer                 | The middle branches of a tree                                     |
-| Top layer                    | The top of the trees with the sun (yellow center) in the middle   |
-| Each white edge-piece        | A bald eagle                                                      |
-| White sticker on the eagle   | Its **head** — must face the prey (points down/inward)            |
-| Colored sticker on the eagle | Its coloured **claws** — must match a tree color (points outward) |
+<h2>The cast</h2>
+<div class="grid">
+<div class="cell"><div class="fig" data-k="cf"></div><b>The landscape</b><span>Sun on top, rabbit on the ground</span></div>
+<div class="cell"><div class="fig" data-k="cg"></div><b>The goal</b><span>All 4 eagles around the rabbit</span></div>
+</div>
+<div class="card"><ul style="margin:0">
+<li>☀️ <b>Sun</b>: the yellow center. It marks the top.</li>
+<li>🐇 <b>Rabbit</b>: the white center, on the ground (bottom).</li>
+<li>🌳 <b>Trees</b>: the colored side centers. A tree is a whole face.</li>
+<li>🦅 <b>Eagles</b>: the 4 white edge pieces. Each has a white <b>head</b> and colored <b>claws</b>.</li>
+</ul>
+<p style="margin:8px 0 0"><b>Goal:</b> all 4 eagles on the ground, heads toward the rabbit, claws out and matching their tree. That's the white cross.</p></div>
 
-**Goal:** get all 4 eagles down onto the ground, heads facing the prey, claws facing out to match their own colored tree. 
+<h2><span class="n">0</span>Find the rabbit</h2>
+<p>Hold the cube with the rabbit (white center) on the ground and the sun (yellow center) on top. Keep it that way the whole time. If the rabbit moves, the eagles lose their target.</p>
 
-For some more realism, you could also say that instead of coloured claws, they are coloured leg bands that are attached to the eagle.
+<h2><span class="n">1</span>Pick an eagle, get it to the nest</h2>
+<p>Turning a tree moves its eagle around the edge spots: <b>nest</b> (top), <b>branch</b> (side), <b>ground</b> (bottom). Pick any eagle that isn't already home.</p>
+<div class="grid">
+<div class="cell"><div class="fig" data-k="claws"></div><b>On a branch</b><span>Turn the tree its claws are on, upward. Its head ends on top.</span></div>
+<div class="cell"><div class="fig" data-k="g2n"></div><b>On the ground</b><span>A half turn sends it up to the nest.</span></div>
+</div>
+<ul>
+<li>A branch eagle touches two trees. Either quarter turn gets it to the nest, but turning the claws' tree puts the head on top, which is better.</li>
+<li>Already on the ground in the right spot, head toward the rabbit, claws matching its tree? It's done. Pick another.</li>
+<li>At the nest, the head can face up or sideways. Don't worry yet, step 3 handles it.</li>
+</ul>
 
-## Step 0: Locate the White Rabbit
+<h2><span class="n">2</span>Fly to its nest</h2>
+<p>Look at the claw color. Turn the top until the eagle is above the tree of that color. Then turn the whole cube so that tree faces you.</p>
+<div class="grid">
+<div class="cell"><div class="fig" data-k="bef"></div><b>Before</b><span>Claws are orange, but it's over the green tree.</span></div>
+<div class="cell"><div class="fig" data-k="aft"></div><b>After</b><span>Turn the top. Now it's over the orange tree.</span></div>
+</div>
+<p class="mut">The colored bars are the trees. The head can face sideways here, as in these pictures.</p>
 
-Find the white center piece - that's the white rabbit. 
+<h2><span class="n">3</span>Check the perch</h2>
+<div class="grid">
+<div class="cell"><div class="fig" data-k="good"></div><b>Properly perched</b><span>White head up. Go to step 4.</span></div>
+<div class="cell"><div class="fig" data-k="poor"></div><b>Poorly perched</b><span>Head sideways. Fix it below.</span></div>
+</div>
+<div class="card"><b>Fixing a poorly perched eagle</b>
+<div class="chips">
+<div class="chip"><code>F</code>land on the right tree</div>
+<div class="chip"><code>R</code>fly up</div>
+<div class="chip"><code>U</code>fly home</div>
+<div class="chip"><code>R'</code>reset the tree</div>
+</div>
+<div class="g3">
+<div class="cell"><div class="fig" data-k="f1"></div><span>Start</span></div>
+<div class="cell"><div class="fig" data-k="f2"></div><span>After <code>F R</code></span></div>
+<div class="cell"><div class="fig" data-k="f3"></div><span>After <code>U R'</code></span></div>
+</div>
+<p class="mut" style="margin:0">Prefer the left side? Mirror it: <code>F' L' U' L</code>. Now it's properly perched.</p></div>
 
-- Rotate the cube so the rabbit is on the ground (the bottom face).
+<h2><span class="n">4</span>Dive to the rabbit</h2>
+<div class="grid">
+<div class="cell"><div class="fig" data-k="n2g"></div><b>Half turn</b><span>Turn its tree 180° (<code>F2</code>).</span></div>
+<div class="cell"><div class="fig" data-k="land"></div><b>Landed</b><span>Head by the rabbit, claws out, matching its tree.</span></div>
+</div>
+<p>That eagle is solved. Repeat steps 1 to 4 for each remaining eagle.</p>
 
-Keep the rabbit on the ground throughout all the following steps. 
-Every eagle you bring down must orient itself toward this prey. If the rabbit moves, the eagles lose their target.
+<div class="card call"><b>When a wrong eagle invades</b>
+<p style="margin:6px 0 0">If turning a tree knocks a finished eagle loose, send the intruder away (turn the top), then turn the tree back. The finished eagle chased the intruder off and now returns to the rabbit.</p></div>
 
-## Step 1: Locate an Eagle
+<div class="card"><b>Move key</b>
+<p class="mut" style="margin:6px 0 0">Turning a tree means turning that face: <code>F</code> front, <code>R</code> right, <code>L</code> left, <code>U</code> top. A letter alone is a clockwise quarter turn, <code>'</code> is counterclockwise, <code>2</code> is a half turn.</p></div>
 
-Find any eagle (white edge-piece) on the cube. It might be:
+</div>
 
-- Perched at the top (top layer)
-- Hanging on a middle branch (middle layer)
-- Already down at the ground, correctly or incorrectly placed
-
-Pick one eagle to work with. You'll bring each eagle to the prey one at a time.
-
-## Step 2: Bring the Eagle to the Top
-
-- **Already at the top?** Skip to Step 3.
-- **In the middle branches?** Turn the tree it's touching - the eagle flies up to the top nests.
-- **Already at the ground?**
-  - Head facing the prey *and* claws matching the tree → it's already solved, return to Step 1 and start another eagle.
-  - Facing the wrong way or wrong tree → turn that tree to send it back up to the nests.
-
-Now the eagle is at the top, ready to find its nest.
-
-## Step 3: Fly to Its Nest
-
-Check the eagle's claw color - that tells you which tree it belongs to.
-
-1. Turn the top layer until the eagle sits directly above its matching tree.
-2. Then rotate the whole cube so that the eagle is facing you.
-
-**Check perching:** Is the eagle *properly perched*?
-
-- **Head facing up** (visible from above), **talons on the tree** (visible from the side) → properly perched, go to Step 5.
-- **Head facing sideways** (facing its colored tree) → go to Step 4.
-
-## Step 4: Fix a Poorly Perched Eagle
-
-Sometimes an eagle arrives at its nest, but it landed incorrectly, with its talons in the air!
-
-Here is how to help the eagle land correctly:
-
-1. **Land on an adjacent tree**: Turn the tree that the eagle is poorly perched on 90° clockwise (F) or counterclockwise (F'). 
-   The eagle lands on an adjacent trees branch (R or L side), with its claws on tree branch (edge color matches the adjacent tree).
-
-2. **Fly back up** - Turn that adjacent tree 90° (R or L'). The eagle launches back up to the nests, now properly
-   perched with white head facing up.
-
-3. **Fly back to its own nest** - Turn the top layer so the eagle is above its matching tree again (the tree matching
-   its claws) (U or U').
-4. **Reset the adjacent tree**: Turn the adjacent tree 90° to reset it. This is important because if there was already 
-   an eagle on the ground properly perched, it wants to return back there. See *"When a Wrong Eagle Invades"* 
-
-Now the eagle is properly perched, talons on the tree, ready to dive.
-
-## Step 5: Dive to the Prey
-
-Turn the eagle's tree a full 180° flip to bring the eagle to the ground.
-
-The eagle swoops down and catches the rabbit! White head lands facing the prey, claws land facing out, matching the
-tree.
-
-This eagle is solved.
-
-## Step 6: Repeat for Remaining Eagles
-
-Repeat Steps 1–5 for the remaining eagles. Soon all four eagles are down on the ground, gathered around the prey, claws pointing
-out to their matching trees — the complete white cross.
-
-## When a Wrong Eagle Invades
-
-Sometimes a correctly-placed eagle is already in its ground spot - facing the rabbit, claws matching its tree. But then
-a wrong-colored eagle lands above it, on the same tree.
-
-When you turn that tree to move the wrong eagle away, the correct eagle gets displaced. You can think of it as if the
-correctly-placed eagle flies up to defend its tree, chasing the wrong-colored eagle away, and then returns to its prey.
-
-1. Turn the tree — the correct eagle flies up to a side branch, and the wrong eagle flies back to the top.
-
-2. Send the wrong eagle somewhere else (turn it to its own nest).
-
-3. The correct eagle returns — turn the tree back, and the correct eagle swoops back down to where it belongs.
-
-The correct eagle defends its tree. It chases off the intruder, then returns to the prey.
-
-## The Core Concepts
+## Core Concepts
 
 This method teaches fundamental cube-solving concepts through story:
 
-1. **Orientation** — Properly perched (white head up) vs. poorly perched (head sideways)
-2. **Permutation** — Flying to the nest above the matching tree
-3. **Insertion** — Diving down to the prey
-4. **Recovery** — The eagle defends its tree and returns to its prey
+1. **Orientation** - Properly perched (white head up) vs. poorly perched (head sideways)
+2. **Permutation** - Flying to the nest above the matching tree
+3. **Insertion** - Diving down to the prey
+4. **Recovery** - The eagle defends its tree and returns to its prey
 
-These concepts transfer directly to the next steps of the beginner's method and more advanced solving. 
+These concepts transfer directly to the next steps of the beginner's method and more advanced solving.
 
-I use different metaphors for the next steps, but one cound continue with the eagle metaphor: The corners are just 
+I use different metaphors for the next steps, but one could continue with the eagle metaphor: The corners are just
 eagles that need to nest differently. The second layer is just eagles that need to land in middle branches.
 
-## Why Metaphors Work
 
-The bald eagle method isn't necessarily faster than traditional approaches. What it offers is *visualization*.
-
-When you can see an eagle flying to a tree and diving toward prey, the moves become memorable. Each action has narrative
-logic:
-
-- "Properly perched" describes orientation without technical terms
-- "Fly to nest" describes positioning relative to centers
-- "Dive to prey" describes the insertion move
-- "Defend its tree" reframes displacement as active and purposeful, not a mistake
-
-When something goes wrong — like a piece getting moved while solving another — the metaphor provides language that
-doesn't feel like failure. The eagle is just doing its job.
-
-## Summary
-
-The complete eagle's journey:
-
-| Step | Action       | Move                               |
-|------|--------------|------------------------------------|
-| 1    | Locate       | Find any eagle on the cube         |
-| 2    | Bring to top | Turn tree to send eagle to nests   |
-| 3    | Fly to nest  | Position above matching tree       |
-| 4    | Fix perching | Land, fly up, fly home (if needed) |
-| 5    | Dive         | 180° flip to catch prey            |
-
-When all four eagles are gathered around the rabbit, white heads inward and claws matching their trees, you've built the
-cross — the foundation for everything that follows.
+<script data-astro-rerun>
+(function(){
+var C={f:'#2fa84f',r:'#f08a24',b:'#2b6fe0',l:'#d93a3a'},W='#fff',G='var(--line)',Y='var(--y)',T='rgba(47,168,79,.25)';
+function rect(x,y,w,h,f,rx){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="'+(rx||3)+'" fill="'+f+'" stroke="var(--line)" stroke-width="1.5"/>'}
+function tx(x,y,t,sz,a){return '<text x="'+x+'" y="'+y+'" font-size="'+sz+'" text-anchor="'+(a||'middle')+'" dominant-baseline="central" fill="var(--fg)">'+t+'</text>'}
+function sv(tag,b){return '<svg viewBox="-24 -12 200 172" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--acc)"/></marker></defs><text x="-6" y="-3" font-size="9" fill="var(--mut)">'+tag+'</text>'+b+'</svg>'}
+function grid(c,e){var s='';for(var i=0;i<9;i++){var x=25+(i%3)*34,y=25+Math.floor(i/3)*34;s+=rect(x,y,32,32,c[i],5);if(e&&e[i])s+=tx(x+16,y+17,e[i],18)}return s}
+function st(side,idx,col){var a=25+idx*34,x,y,w,h;if(side=='b'){x=a;y=15;w=32;h=7}else if(side=='r'){x=128;y=a;w=7;h=32}else if(side=='f'){x=a;y=128;w=32;h=7}else{x=15;y=a;w=7;h=32}return rect(x,y,w,h,col,2)}
+function arc(p){return '<path d="'+p+'" fill="none" stroke="var(--acc)" stroke-width="3" marker-end="url(#ah)"/>'}
+function bars(){return rect(25,2,100,6,C.b)+rect(142,25,6,100,C.r)+rect(25,142,100,6,C.f)+rect(2,25,6,100,C.l)}
+function tree(){var c=[];for(var i=0;i<9;i++)c.push(i==4?C.f:G);return c}
+function face(eg,p,noR,extra,col){var c=tree(),e=[];c[eg]=col||W;e[eg]='🦅';e[4]='🌳';
+return sv('Front view',grid(c,e)+tx(75,6,'nest',10)+tx(75,144,'ground',10)+tx(20,75,'branch',10,'end')+(noR?'':tx(132,75,'branch',10,'start'))+(extra||'')+arc(p))}
+function topv(c,e,s,b,a){return sv('Top view',grid(c,e)+s+(b?bars():'')+(a?arc(a):''))}
+function tc(i,col){var c=[G,G,G,G,Y,G,G,G,G],e=[];e[4]='☀️';c[i]=col;e[i]='🦅';return [c,e]}
+var F={
+cf:function(){var c=tree(),e=[];c[1]=W;e[1]='🦅';e[4]='🌳';
+return sv('Front view',tx(75,12,'☀️',20)+tx(92,12,'sun (top)',9,'start')+grid(c,e)+tx(20,41,'nest',9,'end')+tx(20,75,'branch',9,'end')+tx(20,109,'ground',9,'end')+tx(75,148,'🐇',18)+tx(92,148,'rabbit (bottom)',8,'start'))},
+cg:function(){return sv('Ground view (from above)',grid([G,W,G,W,W,W,G,W,G],[0,'🦅',0,'🦅','🐇','🦅',0,'🦅',0])+st('b',1,C.b)+st('r',1,C.r)+st('f',1,C.f)+st('l',1,C.l))},
+claws:function(){var c=tree(),e=[];c[5]=W;e[5]='🦅';e[4]='🌳';
+return sv('Front view',grid(c,e)+tx(75,6,'nest',10)+tx(75,144,'ground',10)+tx(20,75,'branch',10,'end')+st('r',1,C.r)+tx(142,100,'claws',8)+'<path d="M142 90 L142 44" fill="none" stroke="var(--acc)" stroke-width="3" marker-end="url(#ah)"/>')},
+g2n:function(){return face(7,'M81 108 A34 34 0 0 0 81 42',0,st('f',1,W),C.r)},
+n2g:function(){return face(1,'M81 42 A34 34 0 0 1 81 108',0,st('b',1,W),C.f)},
+bef:function(){var t=tc(7,C.r);return topv(t[0],t[1],st('f',1,W),1,'M87 107 A34 34 0 0 0 107 87')},
+aft:function(){var t=tc(5,C.r);return topv(t[0],t[1],st('r',1,W),1)},
+good:function(){var t=tc(7,W);return topv(t[0],t[1],st('f',1,C.f))},
+poor:function(){var t=tc(7,C.f);return topv(t[0],t[1],st('f',1,W))},
+f1:function(){var t=tc(7,C.f);return topv(t[0],t[1],st('f',1,W))},
+f2:function(){var t=tc(5,W);return topv(t[0],t[1],st('r',1,C.f))},
+f3:function(){var t=tc(7,W);return topv(t[0],t[1],st('f',1,C.f))},
+land:function(){return sv('Ground view (from above)',grid([G,G,G,G,W,G,G,W,G],[0,0,0,0,'🐇',0,0,'🦅',0])+st('f',1,C.f))}
+};
+document.querySelectorAll('.fig').forEach(function(e){e.outerHTML=F[e.dataset.k]()});
+})();
+</script>
