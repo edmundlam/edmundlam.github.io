@@ -2,7 +2,6 @@
 title: "Zero Downtime Migration of Our Distributed Task Queue System"
 date: "2025-02-26"
 event: "ConFoo 2025"
-external_url: "https://speakerdeck.com/edmundlam/zero-downtime-migration-of-our-distributed-task-queue-system"
 description: "Migrating a critical task queue system from Huey+Redis to Celery+SQS without downtime."
 tags:
   - "distributed-systems"
@@ -38,4 +37,4 @@ in ensuring a seamless transition. The talk was organized into six lessons learn
 The migration succeeded with zero
 downtime. 
 
-[Session details](https://confoo.ca/en/2025/session/zero-downtime-migration-of-our-distributed-task-queue-system)
+[Slides](https://speakerdeck.com/edmundlam/zero-downtime-migration-of-our-distributed-task-queue-system) · [Session details](https://confoo.ca/en/2025/session/zero-downtime-migration-of-our-distributed-task-queue-system)

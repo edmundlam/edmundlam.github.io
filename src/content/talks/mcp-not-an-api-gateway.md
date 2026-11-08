@@ -1,9 +1,8 @@
 ---
-title: "Your MCP Is Not an API Gateway: Designing Tools Agents Can Actually Use"
+title: "Your MCP Is Not an API Gateway"
 date: "2026-10-06"
 event: "MCP Dev Summit Toronto 2026"
-external_url: "/talks/agent_friendly.html"
-description: "Why porting your REST API one-to-one into MCP tools makes agents slower, costlier, and likelier to do the wrong thing - and the design craft that fixes it."
+description: "How to design agent friendly MCP tools."
 tags:
   - "mcp"
   - "ai-agents"
